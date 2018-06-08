@@ -1,4 +1,5 @@
 # IRMA onAir Web - A graphical interface for the APC REST API
+![Logo](https://www.irmaonair.com/other/github/Logo_onAir_black.png) 
 
 Note: Documentation for the REST API is available on [our Homepage](https://www.irmaonair.com/docs).
 To get more information about our Product [click here](https://www.irmaonair.com).
