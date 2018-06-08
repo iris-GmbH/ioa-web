@@ -1,0 +1,13 @@
+﻿{
+  "compilerOptions": {
+    "allowJs": true,
+    "noEmit": true
+  },
+  "exclude": [
+    "wwwroot/Content/*",
+    "wwwroot/Lib/*",
+    "wwwroot/Scripts/blobjs/*",
+    "wwwroot/Lib/Scripts/local/*",
+    "obj/*"
+  ] //ignore lib folders, we will get IntelliSense via ATA
+}

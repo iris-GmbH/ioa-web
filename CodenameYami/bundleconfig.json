@@ -1,0 +1,60 @@
+[
+  {
+    "outputFileName": "wwwroot/Scripts/custom/application.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/custom/application.js"
+    ],
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/Scripts/custom/initial.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/custom/initial.js"
+    ],
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/Scripts/custom/pre-initial.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/custom/pre-initial.js"
+    ],
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/Scripts/custom/application-modalVisibility.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/custom/application-modalVisibility.js"
+    ],
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/Scripts/local/jquery.i18n.fallbacks.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/local/jquery.i18n.fallbacks.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/Scripts/local/jquery.i18n.language.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/local/jquery.i18n.language.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/Scripts/local/jquery.i18n.messagestore.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/local/jquery.i18n.messagestore.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/Scripts/local/jquery.i18n.parser.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/local/jquery.i18n.parser.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/Scripts/local/jquery.i18n.min.js",
+    "inputFiles": [
+      "wwwroot/Scripts/local/jquery.i18n.js"
+    ]
+  }
+]

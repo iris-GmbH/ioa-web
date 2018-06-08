@@ -1,0 +1,445 @@
+/* Font - open-sans - regular - latin-ext_cyrillic_latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/open-sans-v15-latin-ext_cyrillic_latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Open Sans Regular'), local('OpenSans-Regular'), url('../fonts/open-sans-v15-latin-ext_cyrillic_latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/open-sans-v15-latin-ext_cyrillic_latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/open-sans-v15-latin-ext_cyrillic_latin-regular.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/open-sans-v15-latin-ext_cyrillic_latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/open-sans-v15-latin-ext_cyrillic_latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+* {
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+p {
+    color: #afb1be;
+    font-size: 0.625em;
+    text-align: left;
+}
+
+.onair-logo {
+    width: 244px;
+    height: 116px;
+}
+
+/* loading overlay */
+#overlay {
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,1);
+    transition: 1s 0.4s;
+}
+
+#progress {
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    width: 0;
+    top: 50%;
+}
+
+#progstat {
+    font-size: 0.7em;
+    letter-spacing: 3px;
+    position: absolute;
+    top: 50%;
+    margin-top: -40px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+#accountButton, #logoutButton {
+    margin-bottom: 6px;
+}
+
+.js-disabled {
+    color: red;
+    font-size: 24px;
+    padding: 30px 40px 120px 40px;
+    pointer-events: none;
+}
+
+.login-input-padding {
+    padding-bottom: 25px;
+}
+
+.main-background:before {
+    background-color: rgba(0, 0, 0, 0.97);
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transform: scale(1.01); /* Scale a bit because of css blur creates white edges on bg */
+    background-image: url('/Content/Theme/login-background.jpg');
+    background-size: cover;
+    -webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -ms-filter: blur(4px);
+    filter: blur(4px);
+    background-position: center;
+}
+
+.main-background {
+    /* IE10-11 rare bugfix */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.modal-small {
+    display: none;
+    overflow: hidden;
+    background: #35394b;
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #35394b), color-stop(100%, #1f222f)); /* Chrome, Safari 4+ */
+    background: -webkit-linear-gradient(45deg, #35394b 0%, #1f222f 100%); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+    background: linear-gradient(to top, #35394b 0%, #1f222f 100%); /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#35394b', endColorstr='#1f222f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 320px;
+    color: white;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 20px 70px;
+    bottom: 0;
+    height: 200px;
+    opacity: 0;
+}
+
+    .modal-small p {
+        text-align: center;
+        color: white;
+        margin: 5px 0px 10px 0px;
+    }
+
+.modal-small-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.scale-to-background {
+    pointer-events: none;
+    top: -100px !important;
+    -webkit-transform: scaleX(0.0001) !important;
+    -moz-transform: scaleX(0.0001) !important;
+    transform: scaleX(0.0001);
+    opacity: .5 !important;
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    filter: blur(1px);
+}
+
+.main {
+    overflow: hidden;
+    overflow-y: auto;
+    opacity: 1;
+    top: 0;
+    height: 500px;
+    -webkit-transition-timing-function: cubic-bezier(0.68, -0.25, 0.265, 0.85);
+    -webkit-transition-property: opacity,box-shadow,top,left,-webkit-transform;
+    transition-property: opacity,box-shadow,top,left,-webkit-transform;
+    transition-property: transform,opacity,box-shadow,top,left;
+    transition-property: transform,opacity,box-shadow,top,left,-webkit-transform;
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s;
+    -webkit-transform-origin: 161px 100%;
+    transform-origin: 161px 100%;
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    width: 320px;
+    border-top: 3px solid #D8312A;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 0;
+    background: #35394b;
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #35394b), color-stop(100%, #1f222f)); /* Chrome, Safari 4+ */
+    background: -webkit-linear-gradient(45deg, #35394b 0%, #1f222f 100%); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+    background: linear-gradient(to top, #35394b 0%, #1f222f 100%); /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#35394b', endColorstr='#1f222f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    box-shadow: 6px 6px 25px 3px rgba(0, 0, 0, 0.55);
+    padding-top: 15px;
+}
+
+    .main .login-footer {
+        padding-top: 5px;
+        left: 16px;
+        color: #afb1be;
+        font-size: 0.89em;
+        width: 290px;
+    }
+
+.login-title {
+    color: #afb1be;
+    height: 35px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.login-main {
+    position: absolute;
+    left: 0;
+    margin-left: -15px;
+}
+
+.login-icon {
+    position: absolute;
+    left: 32px;
+    top: 9px;
+    opacity: .4;
+    transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out;
+}
+
+    .login-icon:hover {
+        opacity: 1;
+    }
+
+.login-main input[type='text'], .login-main input[type='password'] {
+    width: 320px;
+    height: auto;
+    background: white;
+    left: 0;
+    padding: 10px 10px 10px 65px;
+    border: none;
+    outline: none;
+    border-radius: 0px;
+    box-shadow: none;
+    font-size: 1.35em;
+    display: block;
+}
+
+.login-input, .login-input, .login-input {
+    position: relative;
+}
+
+.login-button-submit {
+    width: 80%;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 10%;
+    margin-right: 10%;
+    cursor: pointer;
+    padding: 16px 32px;
+    text-decoration: none;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    transition: background 0.4s;
+    background-color: rgba(0,0,0,0.0);
+    background-position: center;
+    border-width: 2px;
+    border-style: solid;
+    border: 2px solid #0091FF;
+}
+
+    .login-button-submit:hover {
+        background: #0091FF radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+        outline: none;
+    }
+
+    .login-button-submit:active {
+        background-color: #0091FF;
+        border: 2px solid #47a7f5;
+        background-size: 100%;
+        transition: background 0s, border 0s;
+        outline: none;
+    }
+
+/* Bootstrap Modalmessages center overwrite */
+.modal {
+    text-align: center;
+    padding: 0 !important;
+}
+
+    .modal:before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        margin-right: -4px;
+    }
+
+.modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.modal-body {
+    white-space: pre-wrap;
+    font-size: 18px;
+}
+
+.form-login-extend {
+    display: inline-block;
+    width: 120px;
+}
+
+.header-padding {
+    padding-bottom: 15px;
+}
+
+.info-header {
+    color: #ffffff;
+    text-align: right; /* mobile & small displays */
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+.greeting-style {
+    border-bottom: 1px solid rgba(255,255,255,0.9);
+    display: inline-block;
+}
+
+.search-input {
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    margin-bottom: 6px;
+}
+
+/* Extra Padding for selection menus */
+.dropdown-menu {
+    padding: 10px 0;
+}
+
+/* inner div styling for optimal flag positions for selection menus */
+.inner {
+    margin-left: -8px !important;
+}
+
+.bootstrap-select {
+    width: auto !important;
+}
+
+.dropdown-toggle {
+    outline: none !important;
+}
+
+.fa-padding {
+    padding-right: 5px;
+}
+
+/* Login Remember Me */
+.remember-padding {
+    padding-left: 32px;
+    padding-top: 16px;
+}
+
+.remember-message {
+    font-size: 18px;
+    color: #afb1be;
+    font-weight: 400;
+}
+
+/* Customize the label (the container-remember) */
+.container-remember {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+    /* Hide the browser's default checkbox */
+    .container-remember input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+/* Create a custom checkbox */
+.checkmark-remember {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    transition: background-color 0.4s;
+}
+
+/* On mouse-over, add a grey background color */
+.container-remember:hover input ~ .checkmark-remember {
+    background-color: #ccc;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    transition: background-color 0.4s;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container-remember input:checked ~ .checkmark-remember {
+    background-color: #0091FF;
+}
+
+/* Create the checkmark-remember/indicator (hidden when not checked) */
+.checkmark-remember:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark-remember when checked */
+.container-remember input:checked ~ .checkmark-remember:after {
+    display: block;
+}
+
+/* Style the checkmark-remember/indicator */
+.container-remember .checkmark-remember:after {
+    left: 10px;
+    top: 7px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}

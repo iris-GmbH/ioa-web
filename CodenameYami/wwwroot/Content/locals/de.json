@@ -1,0 +1,42 @@
+﻿{
+  "$login_title": "IRMA onAir Web",
+  "$login_text": "Eingabe Ihrer Anmeldedaten",
+  "$login_button": "Anmelden",
+  "$login_footer": "Kontakt - irmaonair@irisgmbh.de",
+  "$login_remember": "Login speichern",
+
+  "$login_connect": "Verbinde mit IRMA onAir ...",
+  "$login_failed": "Verbindung mit IRMA onAir fehlgeschlagen.",
+  "$login_forbidden": "Zugriff verweigert. Benutzername oder Kennwort ungültig.",
+  "$login_failed_buttontext": "Zurück",
+
+  "$mainapp_datepicker_title": "Auswahl der Betriebstage",
+  "$mainapp_vehiclepicker_title": "Auswahl der Fahrzeuge",
+  "$mainapp_download_title": "Download der Zähldaten",
+
+  "$vehicle_picker_search_from": "Verfügbare Fahrzeuge",
+  "$vehicle_picker_search_to": "Ausgewählte Fahrzeuge",
+
+  "$mainapp_download_button_text": "Herunterladen",
+  "$mainapp_calendar_reset_button": "Kalender zurücksetzen",
+
+  "$modal_calendar_reset_text": "Alle ausgewählten Felder werden zurückgesetzt.",
+  "$modal_calendar_date_limit": "Bitte wählen Sie nicht mehr als 31 Betriebstage gleichzeitig aus.",
+  "$modal_calendar_date_futurelimit": "Bitte ändern Sie die Auswahl der Betriebstage. Sie befinden sich (teilweise) in der Zukunft.",
+  "$modal_session_expired": "Ihre Sitzung ist abgelaufen.",
+  "$modal_vehiclepicker_all_notselected": "Kein Datum oder Fahrzeug ausgewählt.",
+  "$modal_ajax_error": "Fehler.",
+  "$modal_messagetitle": "Benachrichtigung",
+
+  "$mainapp_welcome": "Herzlich Willkommen,",
+  "$mainapp_accountButton": "Account Info",
+  "$mainapp_logoutButton": "Abmelden",
+
+  "$modal_accountTitle": "Account Datenbank Informationen",
+  "$modal_accountName": "Name",
+  "$modal_accountLongName": "Vollständiger Name",
+  "$modal_accountShortName": "Kurzer Name",
+  "$modal_accountMail": "Mail Adresse",
+  "$modal_accountTimeZone": "Account Zeitzone",
+  "$modal_accountLanguage": "Sprache"
+}

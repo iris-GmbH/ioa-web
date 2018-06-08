@@ -1,0 +1,43 @@
+﻿{
+  "$login_title": "IRMA onAir Web",
+  "$login_text": "Введите свои учётные данные",
+  "$login_button": "Войти",
+  "$login_footer": "Связаться с нами - irmaonair@irisgmbh.de",
+  "$login_remember": "Запомни меня",
+
+  "$login_connect": "Соединение с IRMA onAir ...",
+  "$login_failed": "Соединение с IRMA onAir не может быть установлено.",
+  "$login_forbidden": "Отказанов в доступе. Неверное имя пользователя или пароль.",
+  "$login_failed_buttontext": "Назад",
+  "$login_statusbar_text": "Статус бэкенд-сервера -",
+
+  "$mainapp_datepicker_title": "Выбор даты",
+  "$mainapp_vehiclepicker_title": "Выбор транспортного средства",
+  "$mainapp_download_title": "Загрузить данные",
+
+  "$vehicle_picker_search_from": "Доступные устройства",
+  "$vehicle_picker_search_to": "Выбранные устройства",
+
+  "$mainapp_download_button_text": "Скачать",
+  "$mainapp_calendar_reset_button": "Сбросить календарь",
+
+  "$modal_calendar_reset_text": "Все выбранные поля были сброшены",
+  "$modal_calendar_date_limit": "Пожалуйста, не выбирайте более 31 дней.",
+  "$modal_calendar_date_futurelimit": "Выбранные дни работы находятся в будущем, пожалуйста, измените выбор соответственно.",
+  "$modal_session_expired": "Ваша сессия истекла.",
+  "$modal_vehiclepicker_all_notselected": "Не выбраны дни работы или транспортные средства.",
+  "$modal_ajax_error": "Ошибка.",
+  "$modal_messagetitle": "Сообщение приложения",
+
+  "$mainapp_welcome": "Добро пожаловать,",
+  "$mainapp_accountButton": "Информация",
+  "$mainapp_logoutButton": "Выйти",
+
+  "$modal_accountTitle": "Информация об аккаунте",
+  "$modal_accountName": "Имя",
+  "$modal_accountLongName": "Полное имя",
+  "$modal_accountShortName": "Короткое имя",
+  "$modal_accountMail": "Почтовый адрес",
+  "$modal_accountTimeZone": "Временная зона",
+  "$modal_accountLanguage": "Язык"
+}

@@ -1,0 +1,215 @@
+﻿.btn {
+    border: 1px solid rgba(51,54,71,0.38);
+}
+
+.btn-ioa {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    color: black;
+    background-color: white;
+    -webkit-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+}
+
+    .btn-ioa:hover,
+    .btn-ioa:focus,
+    .btn-ioa:active,
+    .btn-ioa.active,
+    .open .dropdown-toggle.btn-ioa {
+        color: black;
+        background-color: #f1f1f1;
+        -webkit-transition: background-color 200ms linear;
+        -ms-transition: background-color 200ms linear;
+        transition: background-color 200ms linear;
+    }
+
+    .btn-ioa:active,
+    .btn-ioa.active,
+    .open .dropdown-toggle.btn-ioa {
+        background-image: none;
+    }
+
+    .btn-ioa.disabled,
+    .btn-ioa[disabled],
+    fieldset[disabled] .btn-ioa,
+    .btn-ioa.disabled:hover,
+    .btn-ioa[disabled]:hover,
+    fieldset[disabled] .btn-ioa:hover,
+    .btn-ioa.disabled:focus,
+    .btn-ioa[disabled]:focus,
+    fieldset[disabled] .btn-ioa:focus,
+    .btn-ioa.disabled:active,
+    .btn-ioa[disabled]:active,
+    fieldset[disabled] .btn-ioa:active,
+    .btn-ioa.disabled.active,
+    .btn-ioa[disabled].active,
+    fieldset[disabled] .btn-ioa.active {
+        background-color: white;
+        border-color: black;
+    }
+
+.btn-load {
+    color: white;
+    border-color: #5d7a90;
+    background-color: #0091FF;
+    -webkit-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+}
+
+    .btn-load:hover,
+    .btn-load:focus,
+    .btn-load:active,
+    .btn-load.active,
+    .open .dropdown-toggle.btn-load {
+        color: white;
+
+        background-color: #1b84de;
+        -webkit-transition: background-color 200ms linear;
+        -ms-transition: background-color 200ms linear;
+        transition: background-color 200ms linear;
+
+    }
+
+    .btn-load:active,
+    .btn-load.active,
+    .open .dropdown-toggle.btn-load {
+        background-image: none;
+    }
+
+    .btn-load.disabled,
+    .btn-load[disabled],
+    fieldset[disabled] .btn-load,
+    .btn-load.disabled:hover,
+    .btn-load[disabled]:hover,
+    fieldset[disabled] .btn-load:hover,
+    .btn-load.disabled:focus,
+    .btn-load[disabled]:focus,
+    fieldset[disabled] .btn-load:focus,
+    .btn-load.disabled:active,
+    .btn-load[disabled]:active,
+    fieldset[disabled] .btn-load:active,
+    .btn-load.disabled.active,
+    .btn-load[disabled].active,
+    fieldset[disabled] .btn-load.active {
+        background-color: #1b84de;
+        -webkit-transition: background-color 200ms linear;
+        -ms-transition: background-color 200ms linear;
+        transition: background-color 200ms linear;
+    }
+
+.btn-crimson {
+    color: white;
+    background-color: crimson !important;
+    background-image: none !important;
+    -webkit-transition: background-color 200ms linear !important;
+    -ms-transition: background-color 200ms linear !important;
+    transition: background-color 200ms linear !important;
+}
+
+    .btn-crimson:hover,
+    .btn-crimson:focus,
+    .btn-crimson:active,
+    .btn-crimson.active,
+    .open .dropdown-toggle.btn-crimson {
+        color: white;
+        background-color: #cc1336 !important;
+        -webkit-transition: background-color 200ms linear;
+        -ms-transition: background-color 200ms linear;
+        transition: background-color 200ms linear;
+    }
+
+    .btn-crimson:active,
+    .btn-crimson.active,
+    .open .dropdown-toggle.btn-crimson {
+        background-image: none;
+    }
+
+    .btn-crimson.disabled,
+    .btn-crimson[disabled],
+    fieldset[disabled] .btn-crimson,
+    .btn-crimson.disabled:hover,
+    .btn-crimson[disabled]:hover,
+    fieldset[disabled] .btn-crimson:hover,
+    .btn-crimson.disabled:focus,
+    .btn-crimson[disabled]:focus,
+    fieldset[disabled] .btn-crimson:focus,
+    .btn-crimson.disabled:active,
+    .btn-crimson[disabled]:active,
+    fieldset[disabled] .btn-crimson:active,
+    .btn-crimson.disabled.active,
+    .btn-crimson[disabled].active,
+    fieldset[disabled] .btn-crimson.active {
+        -webkit-transition: background-color 200ms linear;
+        -ms-transition: background-color 200ms linear;
+        transition: background-color 200ms linear;
+        background-color: #a00f2a !important;
+        border-color: black;
+    }
+
+    /* Custom Fullcalendar Style override */
+.fc-button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.fc-prev-button, .fc-next-button {
+    color: white;
+    background-color: #0091FF;
+    -webkit-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+}
+
+    .fc-prev-button.fc-state-hover, .fc-next-button.fc-state-hover {
+        color: white;
+        background-color: #1b84de;
+        -webkit-transition: background-color 200ms linear;
+        -ms-transition: background-color 200ms linear;
+        transition: background-color 200ms linear;
+    }
+
+
+.fc-state-default {
+    border: 1px solid;
+    background-image: none;
+    background-repeat: none;
+    border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+    border-color: rgba(0,0,0,.1) rgba(0,0,0,.1) rgba(0,0,0,.25);
+    /*color: #333;*/
+    text-shadow: 0;
+    box-shadow: none;
+    text-shadow: 0 0px 0px rgba(0,0,0,0) !important;
+}
+
+.fc-state-hover,
+.fc-state-hover .fc-button-inner {
+    text-decoration: none;
+    background-position: 0;
+    -webkit-transition: background-position .1s linear;
+    -moz-transition: background-position .1s linear;
+    -o-transition: background-position .1s linear;
+    transition: background-position .1s linear;
+}
+
+.fc-button-inner {
+    position: relative;
+    float: left;
+    overflow: hidden;
+}
+
+.fc-state-default .fc-button-inner { /* non-theme */
+    border-style: solid;
+    border-width: 0 1px;
+}
+
+.fc-button-content {
+    position: relative;
+    float: left;
+    height: 1.9em;
+    line-height: 1.9em;
+    padding: 0 .6em;
+    white-space: nowrap;
+}

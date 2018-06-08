@@ -1,0 +1,42 @@
+﻿{
+  "$login_title": "IRMA onAir Web",
+  "$login_text": "Zaloguj się twoimi danymi!",
+  "$login_button": "Zaloguj",
+  "$login_footer": "Kontakt - irmaonair@irisgmbh.de",
+  "$login_remember": "Zapamiętaj mnie",
+
+  "$login_connect": "Połączam z IRMA onAir ...",
+  "$login_failed": "Połączenie z IRMA onAir nie mogło zostać utworzone.",
+  "$login_forbidden": "Odmowa dostępu. Login lub Hasło nieprawidłowe.",
+  "$login_failed_buttontext": "Wstecz",
+
+  "$mainapp_datepicker_title": "Wybór daty",
+  "$mainapp_vehiclepicker_title": "Wybór pojazdu",
+  "$mainapp_download_title": "Pobieranie danych",
+
+  "$vehicle_picker_search_from": "Dostępne pojazdy",
+  "$vehicle_picker_search_to": "Wybrane pojazdy",
+
+  "$mainapp_download_button_text": "Pobierz dane",
+  "$mainapp_calendar_reset_button": "Zresetuj kalendarz",
+
+  "$modal_calendar_reset_text": "Wszystkie wybrane pola zostały zresetowane.",
+  "$modal_calendar_date_limit": "Proszę nie wybierać więcej niż 31 dni naraz.",
+  "$modal_calendar_date_futurelimit": "Wybrane dni operacyjne leżą w przyszłości! Proszę zmienić wybrane dni stosownie do tego.",
+  "$modal_session_expired": "Twoja sesja wygasła.",
+  "$modal_vehiclepicker_all_notselected": "Dni operacyjne lub pojazdy niedostały wybrane.",
+  "$modal_ajax_error": "Błąd.",
+  "$modal_messagetitle": "Wiadomość od Aplikacji",
+
+  "$mainapp_welcome": "Witamy,",
+  "$mainapp_accountButton": "Dane konta",
+  "$mainapp_logoutButton": "Wyloguj się",
+
+  "$modal_accountTitle": "Dane konta",
+  "$modal_accountName": "Nazwa",
+  "$modal_accountLongName": "Pełna nazwa",
+  "$modal_accountShortName": "Krótka nazwa",
+  "$modal_accountMail": "Adres Mail",
+  "$modal_accountTimeZone": "Strefa czasowa konta",
+  "$modal_accountLanguage": "Język"
+}

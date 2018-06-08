@@ -1,0 +1,143 @@
+﻿#mainContainer {
+    width: 100%;
+    height: 100%;
+}
+
+#flipItemList {
+    cursor: pointer;
+}
+
+.ms-container {
+    width: 100%;
+}
+
+.search-input {
+    width: 100%;
+    font-family: Arial, FontAwesome;
+    text-indent: 8px;
+    padding: 4px 0px;
+}
+
+.ms-list {
+    /* disable span text selection */
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
+.ms-container .ms-selectable li.ms-elem-selectable, .ms-container .ms-selection li.ms-elem-selection {
+    border-bottom: 1px #eee solid;
+    padding: 4px 10px;
+    color: #555;
+    font-size: 16px;
+}
+
+.ms-container .ms-selectable li.ms-hover, .ms-container .ms-selection li.ms-hover {
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    background-color: #0091FF;
+}
+
+/* override ugly shadow focus from framework */
+.ms-container .ms-list.ms-focus {
+    border-color: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+}
+
+/* Fullcalendar grey out saturdays and sundays */
+.fc-sat, .fc-sun {
+    background-color: #dddddd;
+    opacity: 0.3;
+}
+
+/* Tiny visual fix for hover */
+.fc .fc-button-group > * {
+    margin: 0 0 0 0;
+}
+
+.fc-unthemed td.fc-today {
+    background: #fcf8e3;
+}
+
+.fc-bgevent {
+    background: #8fdf82;
+    opacity: .6;
+}
+
+.absolute-center {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.relative-wrap {
+    position: relative;
+}
+
+.panel-content {
+    padding: 15px;
+}
+
+    .panel-content table {
+        margin-bottom: 0;
+    }
+
+.box-title {
+    display: inline;
+}
+
+.json-text {
+    font-size: 0.5em;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding-top: 7px;
+    padding-left: 2px;
+    letter-spacing: 0.05em;
+    font-weight: 300;
+}
+
+.custom-header {
+    text-align: center;
+    border-radius: 3px;
+    margin-top: 6px;
+    padding: 4px;
+    opacity: 0.8;
+    color: #fff;
+    background: #35394b;
+    /* Old browsers */
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #35394b), color-stop(100%, #1f222f));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(45deg, #35394b 0%, #1f222f 100%);
+    /* Chrome10+,Safari5.1+ */
+    /* Opera 11.10+ */
+    /* IE10+ */
+    background: linear-gradient(45deg, #35394b 0%, #1f222f 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#35394b', endColorstr='#1f222f',GradientType=1 );
+    /* IE6-9 fallback on horizontal gradient */
+}
+
+.download-text {
+    margin-right: 6px;
+}
+
+.ms-container {
+    background: transparent none no-repeat 50% 50%;
+}
+
+.select-flip {
+    width: 10%;
+    display: inline-block;
+    text-align: center;
+}

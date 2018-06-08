@@ -1,0 +1,43 @@
+﻿{
+  "$login_title": "IRMA onAir Web",
+  "$login_text": "Please login with your credentials",
+  "$login_button": "Login",
+  "$login_footer": "Contact us - irmaonair@irisgmbh.de",
+  "$login_remember": "Remember me",
+
+  "$login_connect": "Connecting to IRMA onAir ...",
+  "$login_failed": "Connection to IRMA onAir could not be established.",
+  "$login_forbidden": "Access denied. Invalid username or password.",
+  "$login_failed_buttontext": "Back",
+  "$login_statusbar_text": "Backend Server Status -",
+
+  "$mainapp_datepicker_title": "Date picker",
+  "$mainapp_vehiclepicker_title": "Vehicle picker",
+  "$mainapp_download_title": "Download of Counting Data",
+
+  "$vehicle_picker_search_from": "Available Vehicles",
+  "$vehicle_picker_search_to": "Selected Vehicles",
+
+  "$mainapp_download_button_text": "Download",
+  "$mainapp_calendar_reset_button": "Reset Calendar",
+
+  "$modal_calendar_reset_text": "All picked fields have been resetted.",
+  "$modal_calendar_date_limit": "Please don't pick more than 31 days.",
+  "$modal_calendar_date_futurelimit": "The selected operations days lie in the future, please change them accordingly.",
+  "$modal_session_expired": "Your session has been expired.",
+  "$modal_vehiclepicker_all_notselected": "No operation days or vehicles selected.",
+  "$modal_ajax_error": "Error.",
+  "$modal_messagetitle": "Application Message",
+
+  "$mainapp_welcome": "Welcome,",
+  "$mainapp_accountButton": "Account Info",
+  "$mainapp_logoutButton": "Logout",
+
+  "$modal_accountTitle": "Account Database Informations",
+  "$modal_accountName": "Name",
+  "$modal_accountLongName": "Full Name",
+  "$modal_accountShortName": "Short Name",
+  "$modal_accountMail": "Mail Adress",
+  "$modal_accountTimeZone": "Account Timezone",
+  "$modal_accountLanguage": "Language"
+}
