@@ -33,7 +33,7 @@ Contributions are only accepted through Github pull requests.
 Finally, contributed code must work in supported browsers ([see here](https://github.com/iris-GmbH/ioa-web/wiki/Browser-Compatibility)).
 
 ### Support
-You can contact to us over GitHub or via [irmaonair@irisgmbh.de](mailto:irmaonair@irisgmbh.de) for technical support.
+You can contact us over GitHub or via [irmaonair@irisgmbh.de](mailto:irmaonair@irisgmbh.de) for technical support.
 
 ### License
 IRMA onAir Web is an open source project by [iris-GmbH](https://www.irisgmbh.de) that is licensed under [MIT](http://opensource.org/licenses/MIT).
