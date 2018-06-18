@@ -1,0 +1,51 @@
+﻿@model IrmaWeb.Models.AccountModel
+<div id='modal-login'>
+    <div class='login-title'>
+        <span data-i18n="$login_text"></span>
+    </div>
+
+    @using (Html.BeginForm("Index", "Home", FormMethod.Post, new
+    {
+        data_ajax = "true",
+        data_ajax_method = "POST",
+        data_ajax_mode = "replace",
+        data_ajax_begin = "ajaxBegin",
+        data_ajax_failure = "ajaxFailure",
+        data_ajax_loading = "#loginModal",
+        data_ajax_success = "ajaxSuccess",
+        data_ajax_update = "#mainBody",
+        id = "form0",
+        method = "post"
+    }))
+    {
+        @Html.AntiForgeryToken()
+        <div class='login-main'>
+            @Html.ValidationSummary(true, "", new { @class = "alert alert-danger" })
+            <div class='login-input login-input-padding'>
+                <div class='login-icon'>
+                    <span class="fa fa-2x fa-user fa-padding"></span>
+                </div>
+                @Html.EditorFor(Model => Model.Username, new { HtmlAttributes = new { @Class = "login-input-style", @Required = "required" } })
+            </div>
+            <div class='login-input login-input-padding'>
+                <div class='login-icon'>
+                    <span class="fa fa-2x fa-lock fa-padding"></span>
+                </div>
+                @Html.EditorFor(Model => Model.PasswordPlain, new { HtmlAttributes = new { @Class = "login-input-style", @Required = "required" } })
+            </div>
+            <div>
+                <button id="loginButton" class="login-button-submit" type="submit"><span data-i18n="$login_button"></span></button>
+            </div>
+            <div class="col-xs-10 remember-padding">
+                <label class="container-remember">
+                    <span class="remember-message" data-i18n="$login_remember"></span>
+                    @Html.CheckBoxFor(Model => Model.RememberMe)
+                    <span class="checkmark-remember"></span>
+                </label>
+            </div>
+            <div class="col-xs-10 login-footer">
+                <div data-i18n="$login_footer"></div>
+            </div>
+        </div>
+    }
+</div>

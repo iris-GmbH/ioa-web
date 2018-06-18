@@ -1,0 +1,28 @@
+{
+  "name": "yami",
+  "version": "1.2.0",
+  "dependencies": {
+    "flag-icon-css": "3.1.0",
+    "font-awesome": "Font-Awesome#v4.7.0",
+    "jquery": "3.3.1",
+    "jquery-ui": "1.12.1",
+    "moment": "2.22.2",
+    "bootstrap": "v3.3.7",
+    "js-cookie": "v2.2.0",
+    "fullcalendar": "v3.9.0",
+    "multiselect": "0.9.12",
+    "file-saver": "filesaverjs#1.3.8",
+    "jquery.quicksearch": "quicksearch#2.4.0",
+    "jquery-ajax-unobtrusive": "v3.2.5",
+    "jquery-validation": "jquery-validate#1.17.0",
+    "jquery-validation-unobtrusive": "v3.2.10",
+    "bootstrap-select": "v1.12.4"
+  },
+  "devDependencies": {},
+  "resolutions": {
+    "jquery": "3.3.1",
+    "moment": "2.22.2",
+    "bootstrap-select": "v1.12.4",
+    "jquery-validation-unobtrusive": "v3.2.10"
+  }
+}

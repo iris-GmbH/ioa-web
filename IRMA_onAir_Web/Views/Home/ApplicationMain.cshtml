@@ -1,0 +1,88 @@
+﻿@model IrmaWeb.Models.AccountRoot
+
+<script>
+    var requestArray = []; //Array for requested unsorted dates
+    var selectedDevices = $('#device-list').val(); //It's a reference , NOT a Value!
+    var dayLimit = @IrmaWeb.Models.RuntimeSettings.YamiStatic.Settings.DayLimit; //Value for Fullcalendar limit
+    var allSelected = false;
+
+    //Final container for all data, that will be sended to server-backend
+    var finalData = {
+        dateList: requestArray,
+        deviceList: $('#device-list').val(),
+        accountName: "@Html.Raw(@Model.MyDevices.Operators.Name)",
+        fileExType: $('.download-formats option:selected').data('filext'),
+        requestType: $('.download-formats option:selected').val()
+    }
+
+    //Init of returned server data
+    var loginData = {
+        name: "@Html.Raw(Model.MyDevices.Operators.Name)",
+        longName: "@Html.Raw(Model.MyDevices.Operators.LongName)",
+        shortName: "@Html.Raw(Model.MyDevices.Operators.ShortName)",
+        email: "@Html.Raw(Model.MyDevices.Operators.Email)",
+        timeZone: "@Html.Raw(Model.MyDevices.Operators.TimeZone)",
+        language: "@Html.Raw(Model.MyDevices.Operators.Language)"
+    }
+</script>
+
+@if (IrmaWeb.Models.RuntimeSettings.YamiStatic.Settings.Debug)
+{
+    <!-- Debug Mode -->
+    <script src="~/Scripts/custom/application.js"></script>
+    <script src="~/Scripts/custom/application-modalVisibility.js"></script>
+}
+else
+{
+    <!-- Productive Mode -->
+    <script src="~/Scripts/custom/application.min.js"></script>
+    <script src="~/Scripts/custom/application-modalVisibility.min.js"></script>
+}
+
+<link rel="stylesheet" href="~/Content/Theme/css/style-main.css" />
+
+<div class="body-collector">
+    <div class="row">
+        <div class="col-md-7 col-lg-8">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div data-i18n="$mainapp_datepicker_title" class="text-muted box-title"></div>
+                </div>
+                <div class="panel-content">
+                    <div id="calendar"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5 col-lg-4">
+            <div id="menu-collection">
+                <div id="device-list-panel" class="panel panel-default">
+                    <div class="panel-heading">
+                        <div data-i18n="$mainapp_vehiclepicker_title" class="text-muted box-title">Vehicle Picker</div>
+                    </div>
+                    <div class="panel-content">
+                        <select class="searchable" multiple="multiple" id="device-list" name="device-list[]">
+                            @foreach (var DeviceItem in Model.MyDevices.Operators.Devices)
+                            {
+                                <option value="@DeviceItem.VehicleId">@DeviceItem.VehicleId (SN: @DeviceItem.SerialNumber)</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+                <div id="download-panel" class="panel panel-default">
+                    <div class="panel-heading">
+                        <div data-i18n="$mainapp_download_title" class="text-muted box-title download-text"></div>
+                        <select id="formatListId" class="selectpicker form-login-extend form-control download-formats" data-style="btn-ioa">
+                            <option value="application/vnd.ms-excel" data-filext="xls" data-content='<span class="fa fa-file-excel-o fa-padding"></span> EXCEL'>EXCEL</option>
+                            <option value="text/csv" data-filext="csv" data-content='<span class="fa fa-file-text-o fa-padding"></span> CSV'>CSV</option>
+                            <option value="application/xml" data-filext="xml" data-content='<span class="fa fa-file-code-o fa-padding"></span> XML'>XML</option>
+                            <option value="application/json" data-filext="json" data-content='<span class="relative-wrap"><i class="fa fa-file-o fa-padding"></i><strong class="json-text">{ }</strong></span> JSON'>JSON</option>
+                        </select>
+                    </div>
+                    <div class="panel-content">
+                        <button id="downloadButton" type="button" data-i18n="$mainapp_download_button_text" onclick="sendRequesttoServer($('.download-formats option:selected').val())" class="btn btn-load btn-block"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
