@@ -16,7 +16,7 @@ Note: For a full production deploy follow this [instruction](https://docs.micros
 - Make sure, that a correct [ASP.NET Core 2.0x Runtime](https://www.microsoft.com/net/download/all) is installed.
 - Start the Command Prompt (Windows) or the Terminal (Linux).
 - Change the path to where you extracted the repository.
-- Launch the application with ```dotnet run --project "CodenameYami"```
+- Launch the application with ```dotnet run --project "IRMA_onAir_Web"```
 - The application is now launched and can be accessed over the url that is displayed in console.
 
 ### Wiki Index
