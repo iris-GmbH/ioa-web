@@ -42,7 +42,7 @@ function updateText() {
             //Fullcalendar Custom Button i18n Text Injection becasue of bad button support in framework
             try {
                 $(".fc-resetButton-button")[0].innerHTML = $.i18n('$mainapp_calendar_reset_button');
-                $('.fc-resetButton-button').addClass("btn-crimson");
+                $('.fc-resetButton-button').addClass("btn-load");
                 console.log("Main UI loaded! (Lang: " + i18n.locale + ")");
             } catch (e) {
                 console.log("Login Screen loaded! (Lang: " + i18n.locale + ")"); }
