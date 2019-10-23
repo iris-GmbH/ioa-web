@@ -51,16 +51,12 @@ namespace IrmaWeb.Classes.Helper
         {
             if (RuntimeSettings.YamiStatic.Settings != null)
             {
-                log.LogInformation("------");
-
                 //Infos a few informations about the user that invokes
                 log.LogInformation("User-Agent {@0}", context.Request.Headers["User-Agent"].FirstOrDefault() ?? "Unknown");
                 log.LogInformation("Connection state - LocalIpAddress:{0} - RemoteIpAddress:{1}", 
                     context.Connection.LocalIpAddress, context.Connection.RemoteIpAddress);
 
                 await this.next.Invoke(context);
-
-                log.LogInformation("------");
             }
             else
             {

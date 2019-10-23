@@ -39,7 +39,6 @@ namespace IrmaWeb.Controllers
             //Faster as a instance prop. that calls at every Action execution
             Claim username = HttpContext.User.FindFirst(ClaimHelper.Username);
             Claim password = HttpContext.User.FindFirst(ClaimHelper.Password);
-            Claim metaData = HttpContext.User.FindFirst(ClaimHelper.MetaData);
 
             // Session is dead/dosen't exist
             if (username == null || password == null)
@@ -54,6 +53,7 @@ namespace IrmaWeb.Controllers
                 if (RuntimeSettings.YamiStatic.Settings.SessionCache)
                 {
                     // Load the cached version of MetaData
+                    Claim metaData = HttpContext.User.FindFirst(ClaimHelper.MetaData);
                     accountData = JsonConvert.DeserializeObject<AccountRoot>(metaData.Value);
                 }
                 else
@@ -106,11 +106,14 @@ namespace IrmaWeb.Controllers
                                 {
                                     new Claim(ClaimHelper.Username, loginModel.Username),
                                     new Claim(ClaimHelper.Password, loginModel.PasswordPlain),
-                                    new Claim(ClaimHelper.MetaData, JsonConvert.SerializeObject(accountData.Data)),
                                 };
 
+                            //NOTE: This will not work when it contains too much data (use a real database)
+                            if (RuntimeSettings.YamiStatic.Settings.SessionCache)
+                                claims.Add(new Claim(ClaimHelper.MetaData, JsonConvert.SerializeObject(accountData.Data)));
+
                             var claimsIdentity = new ClaimsIdentity(
-                                claims, CookieAuthenticationDefaults.AuthenticationScheme);
+                            claims, CookieAuthenticationDefaults.AuthenticationScheme);
 
                             var authProperties = new AuthenticationProperties();
                             if (loginModel.RememberMe)
@@ -159,7 +162,7 @@ namespace IrmaWeb.Controllers
         /// </summary>
         /// <param name="userSessionRequest"></param>
         /// <returns></returns>
-        [HttpPost]
+        [HttpPost, DisableRequestSizeLimit]
         public ActionResult DataRequest([FromBody]RequestModel userSessionRequest)
         {
             if (ModelState.IsValid)
