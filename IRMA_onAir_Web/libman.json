@@ -1,0 +1,74 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "flag-icon-css@4.1.5",
+      "destination": "wwwroot/lib/flag-icon-css/"
+    },
+    {
+      "library": "font-awesome@4.7.0",
+      "destination": "wwwroot/lib/font-awesome/"
+    },
+    {
+      "library": "jquery@3.6.0",
+      "destination": "wwwroot/lib/jquery/"
+    },
+    {
+      "library": "jqueryui@1.12.1",
+      "destination": "wwwroot/lib/jquery-ui/"
+    },
+    {
+      "library": "moment.js@2.29.1",
+      "destination": "wwwroot/lib/moment/"
+    },
+    {
+      "library": "twitter-bootstrap@3.4.1",
+      "destination": "wwwroot/lib/bootstrap/"
+    },
+    {
+      "library": "js-cookie@2.2.1",
+      "destination": "wwwroot/lib/js-cookie/"
+    },
+    {
+      "library": "fullcalendar@3.10.2",
+      "destination": "wwwroot/lib/fullcalendar/"
+    },
+    {
+      "library": "multi-select@0.9.12",
+      "destination": "wwwroot/lib/multiselect/"
+    },
+    {
+      "library": "FileSaver.js@2.0.5",
+      "destination": "wwwroot/lib/file-saver/"
+    },
+    {
+      "library": "jquery.quicksearch@2.4.0",
+      "destination": "wwwroot/lib/jquery.quicksearch/"
+    },
+    {
+      "library": "jquery-ajax-unobtrusive@3.2.6",
+      "destination": "wwwroot/lib/jquery-ajax-unobtrusive/"
+    },
+    {
+      "library": "jquery-validate@1.19.3",
+      "destination": "wwwroot/lib/jquery-validation/"
+    },
+    {
+      "library": "jquery-validation-unobtrusive@3.2.12",
+      "destination": "wwwroot/lib/jquery-validation-unobtrusive/"
+    },
+    {
+      "library": "bootstrap-select@1.13.18",
+      "destination": "wwwroot/lib/bootstrap-select/"
+    },
+    {
+      "library": "blob-polyfill@6.0.20211015",
+      "destination": "wwwroot/lib/blob-js/"
+    },
+    {
+      "library": "jquery.i18n@1.0.7",
+      "destination": "wwwroot/lib/jquery-i18n/"
+    }
+  ]
+}

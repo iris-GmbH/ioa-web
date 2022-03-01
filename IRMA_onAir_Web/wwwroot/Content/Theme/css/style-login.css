@@ -341,12 +341,18 @@ p {
 
 /* Extra Padding for selection menus */
 .dropdown-menu {
-    padding: 10px 0;
+    padding: 5px 3px 5px 5px;
+}
+
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:focus, .dropdown-menu > .active > a:hover {
+    background-image: none !important;
+    background-color: #0091FF !important;
 }
 
 /* inner div styling for optimal flag positions for selection menus */
 .inner {
-    margin-left: -8px !important;
+    margin-left: -5px !important;
+    margin-right: -3px;
 }
 
 .bootstrap-select {

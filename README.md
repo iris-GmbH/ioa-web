@@ -7,13 +7,13 @@ To get more information about our Product [click here](https://www.irmaonair.com
 ### About this repository
 This repository contains the web application **IRMA onAir Web**, which provides passenger data in a condensed form as a **ZIP-Archive**.
 Information about ridership, position and status are being exported in default formats like **CSV, XLS (Excel), XML or JSON**.
-IRMA onAir Web is developed in **ASP.NET Core 2.0**
+IRMA onAir Web is developed in **ASP.NET Core 5.0**
 
 ### Getting Started
 Note: For a full production deploy follow this [instruction](https://docs.microsoft.com/en-US/aspnet/core/host-and-deploy/?view=aspnetcore-2.0&tabs=aspnetcore2x).
 
 - Clone this repository and extract it.
-- Make sure, that a correct [ASP.NET Core 2.0x Runtime](https://www.microsoft.com/net/download/all) is installed.
+- Make sure, that a correct [ASP.NET Core 5.x Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/5.0) is installed.
 - Start the Command Prompt (Windows) or the Terminal (Linux).
 - Change the path to where you extracted the repository.
 - Launch the application with ```dotnet run --project "IRMA_onAir_Web"```

@@ -30,6 +30,10 @@ namespace IrmaWeb
             services.AddMvc();
             services.AddOptions();
 
+            // .NET 5.0 fix for .NET Core 1.1 based legacy code endpoint routing
+            // devblogs.microsoft.com/aspnet/asp-net-core-updates-in-net-core-3-0-preview-4
+            services.AddMvc(option => option.EnableEndpointRouting = false);
+
             // Init. default config values. (also fallback when missing in config)
             YamiStatic = new Yami
             {
@@ -83,7 +87,9 @@ namespace IrmaWeb
             });
 
             app.UseAuthentication();
-            loggerFactory.AddConsole(Configuration.GetSection("Logging"));
+            // Note: AddConsole moved into default and is not needed anymore
+            // github.com/dotnet/AspNetCore.Docs/issues/9829
+            // loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddFile(Configuration.GetSection("Logging"));
             LogHelper.LoggerFactory = loggerFactory; //Give over LoggerFactory to static loghelper
 
