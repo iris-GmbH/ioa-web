@@ -17,15 +17,23 @@
     <Compile Remove="App_Start\**" />
     <Compile Remove="wwwroot\Content\Theme\Collection\**" />
     <Compile Remove="wwwroot\Content\Theme\vendors\**" />
+    <Compile Remove="wwwroot\Scripts\blobjs\**" />
+    <Compile Remove="wwwroot\Scripts\local\**" />
     <Content Remove="App_Start\**" />
     <Content Remove="wwwroot\Content\Theme\Collection\**" />
     <Content Remove="wwwroot\Content\Theme\vendors\**" />
+    <Content Remove="wwwroot\Scripts\blobjs\**" />
+    <Content Remove="wwwroot\Scripts\local\**" />
     <EmbeddedResource Remove="App_Start\**" />
     <EmbeddedResource Remove="wwwroot\Content\Theme\Collection\**" />
     <EmbeddedResource Remove="wwwroot\Content\Theme\vendors\**" />
+    <EmbeddedResource Remove="wwwroot\Scripts\blobjs\**" />
+    <EmbeddedResource Remove="wwwroot\Scripts\local\**" />
     <None Remove="App_Start\**" />
     <None Remove="wwwroot\Content\Theme\Collection\**" />
     <None Remove="wwwroot\Content\Theme\vendors\**" />
+    <None Remove="wwwroot\Scripts\blobjs\**" />
+    <None Remove="wwwroot\Scripts\local\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -44,10 +52,6 @@
     <None Include="Views\_ViewStart.cshtml" />
     <None Include="wwwroot\Content\Theme\rings.svg" />
     <None Include="wwwroot\Content\Theme\spinning-circle.svg" />
-    <None Include="wwwroot\Scripts\blobjs\Blob.js" />
-    <None Include="wwwroot\Scripts\blobjs\blob.min.js" />
-    <None Include="wwwroot\Scripts\blobjs\FileSaver.js" />
-    <None Include="wwwroot\Scripts\blobjs\FileSaver.min.js" />
     <None Include="wwwroot\Scripts\custom\application-modalVisibility.js" />
     <None Include="wwwroot\Scripts\custom\application-modalVisibility.min.js" />
     <None Include="wwwroot\Scripts\custom\application.js" />
@@ -56,30 +60,6 @@
     <None Include="wwwroot\Scripts\custom\initial.min.js" />
     <None Include="wwwroot\Scripts\custom\pre-initial.js" />
     <None Include="wwwroot\Scripts\custom\pre-initial.min.js" />
-    <None Include="wwwroot\Scripts\local\jquery.i18n.fallbacks.js" />
-    <None Include="wwwroot\Scripts\local\jquery.i18n.fallbacks.min.js" />
-    <None Include="wwwroot\Scripts\local\jquery.i18n.js" />
-    <None Include="wwwroot\Scripts\local\jquery.i18n.language.js" />
-    <None Include="wwwroot\Scripts\local\jquery.i18n.language.min.js" />
-    <None Include="wwwroot\Scripts\local\jquery.i18n.messagestore.js" />
-    <None Include="wwwroot\Scripts\local\jquery.i18n.messagestore.min.js" />
-    <None Include="wwwroot\Scripts\local\jquery.i18n.min.js" />
-    <None Include="wwwroot\Scripts\local\jquery.i18n.parser.js" />
-    <None Include="wwwroot\Scripts\local\jquery.i18n.parser.min.js" />
-    <None Include="wwwroot\Scripts\local\_extended\bs.js" />
-    <None Include="wwwroot\Scripts\local\_extended\dsb.js" />
-    <None Include="wwwroot\Scripts\local\_extended\fi.js" />
-    <None Include="wwwroot\Scripts\local\_extended\ga.js" />
-    <None Include="wwwroot\Scripts\local\_extended\he.js" />
-    <None Include="wwwroot\Scripts\local\_extended\hsb.js" />
-    <None Include="wwwroot\Scripts\local\_extended\hu.js" />
-    <None Include="wwwroot\Scripts\local\_extended\hy.js" />
-    <None Include="wwwroot\Scripts\local\_extended\la.js" />
-    <None Include="wwwroot\Scripts\local\_extended\ml.js" />
-    <None Include="wwwroot\Scripts\local\_extended\os.js" />
-    <None Include="wwwroot\Scripts\local\_extended\ru.js" />
-    <None Include="wwwroot\Scripts\local\_extended\sl.js" />
-    <None Include="wwwroot\Scripts\local\_extended\uk.js" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
